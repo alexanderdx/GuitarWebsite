@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Guitarism | Free Online Guitar Lessons
+    </title>
+    <link rel="stylesheet" href="../html/home.css" />
+    <meta name="viewport" content="width=device-width">
+    <script src="../home.js"></script>
+</head>
+
+<body>
+    <%- include("../views/loginform") %>
+    <%- include("../views/header") %>
+    <% if (locals.user) { %>
+    <%- include("../views/loggedin") %>
+    <% } else { %>
+    <%- include("../views/guest") %>
+    <% } %>
+
+    <div class="timer-text" style="background-color: black;">
+        Time spent on website:
+        <div id="timer"></div>
+    </div>
+</body>
+
+</html>

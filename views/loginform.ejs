@@ -1,0 +1,32 @@
+<script>
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+
+    function validate() {
+        let email = document.getElementById("email").value;
+
+        console.log(email);
+        if (!validateEmail(email))
+            alert("Introduceti un email valid!");
+    }
+</script>
+
+<div style="position: absolute; left:50%">
+    <div class="login-form" id="login" role="dialog">
+        <div class="login-form-container">
+            <span class="close" onclick=closeLoginForm()>&times;</span>
+            <h1>Login</h1>
+            <form id="login" method="post">
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                <a href="">
+                    <span class="forgot-password">Forgot password?</span>
+                </a>
+                <button type="submit" class="btn-login" onclick="validate()">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

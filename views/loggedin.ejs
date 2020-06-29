@@ -1,0 +1,198 @@
+<script src='../home.js'>
+</script>
+
+<div id="heading-text" class="text-header" style="padding-top: 30px;">
+    Salut
+    <em class="text-yellow">
+        <%= user %>!
+    </em> Ultima oara te-ai logat de pe IP-ul
+    <em class="text-yellow">
+        <%= locals.userIP %>
+    </em> in data de <em class="text-yellow">
+        <%= locals.date %>
+    </em> la ora <em class="text-yellow">
+        <%= locals.hour %>.
+    </em>
+    <br>
+    <% if (locals.numVisits == 0) { %>
+    Te-ai logat acum pentru prima oara.
+    <% } else { %>
+    </em> Ai vizitat site-ul de <em class="text-yellow">
+        <%= locals.numVisits %> ori.
+    </em>
+    <% } %>
+</div>
+<script>
+    setHeaderTextSize();
+</script>
+
+</section>
+
+
+
+<section id="favourite-songs">
+    <header class="section-header" style="padding-top: 150px;">
+        Your Saved Songs
+    </header>
+
+    <ul id='reverse-list' class="table" style="list-style-type: none;">
+        <div class="thead">
+            <div class="thead-col"><span class="wrap">info</span></div>
+            <div class="thead-col"><span class="wrap">Title</span></div>
+            <div class="thead-col"><span class="wrap">Artist</span></div>
+            <div class="thead-col"><span class="wrap">Style</span></div>
+        </div>
+
+        <li class="song-list">
+            <div class="body-row">
+                <div data-label="info" class="col">
+                    <div class="wrap">
+                        1.
+                    </div>
+                </div>
+                <div data-label="Title" class="col">
+                    <span class="wrap">
+                        <a href="https://www.youtube.com/watch?v=4jOog0brUuw">Sweet Home Alabama (Made Easy) </a>
+                    </span>
+                </div>
+                <div data-label="Artist" class="col text-center">
+                    <span class="wrap"><a href="">Lynyrd Skynyrd</a></span>
+                </div>
+                <div data-label="Style" class="col">
+                    <span class="wrap">
+                        <img src="../imgs/acoustic.png" style="max-width: 34px; height: auto;" alt="Acoustic">
+                </div>
+        </li>
+
+        <li class="body-row">
+            <div data-label="info" class="col">
+                <div class="wrap">
+                    2.
+                </div>
+            </div>
+            <div data-label="Title" class="col">
+                <span class="wrap">
+                    <a href="https://www.youtube.com/watch?v=IzxMeQgtyYE">Wish you were here </a>
+                </span>
+            </div>
+            <div data-label="Artist" class="col text-center">
+                <span class="wrap"><a href="">pink floyd</a></span>
+            </div>
+            <div data-label="Style" class="col">
+                <span class="wrap">
+                    <img src="../imgs/acoustic.png" style="max-width: 34px; height: auto;" alt="Acoustic">
+            </div>
+        </li>
+
+        <li class="body-row">
+            <div data-label="info" class="col">
+                <div class="wrap">
+                    3.
+                </div>
+            </div>
+            <div data-label="Title" class="col">
+                <span class="wrap">
+                    <a href="https://www.youtube.com/watch?v=aUGc0-Poun8">Enter Sandman </a>
+                </span>
+            </div>
+            <div data-label="Artist" class="col text-center">
+                <span class="wrap"><a href="">Metallica</a></span>
+            </div>
+            <div data-label="Style" class="col">
+                <span class="wrap">
+                    <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+            </div>
+        </li>
+
+        <li class="body-row">
+            <div data-label="info" class="col">
+                <div class="wrap">
+                    4.
+                </div>
+            </div>
+            <div data-label="Title" class="col">
+                <span class="wrap">
+                    <a href="https://www.youtube.com/watch?v=3UV1CtIUOmU">Come as you are </a>
+                </span>
+            </div>
+            <div data-label="Artist" class="col text-center">
+                <span class="wrap"><a href="">Nirvana</a></span>
+            </div>
+            <div data-label="Style" class="col">
+                <span class="wrap">
+                    <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+            </div>
+        </li>
+
+        <li class="body-row">
+            <div data-label="info" class="col">
+                <div class="wrap">
+                    5.
+                </div>
+            </div>
+            <div data-label="Title" class="col">
+                <span class="wrap">
+                    <a href="https://www.youtube.com/watch?v=VCyM7tjz2YA">Back in black </a>
+                </span>
+            </div>
+            <div data-label="Artist" class="col text-center">
+                <span class="wrap"><a href="">AC/DC</a></span>
+            </div>
+            <div data-label="Style" class="col">
+                <span class="wrap">
+                    <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+            </div>
+        </li>
+    </ul>
+
+    <a href="javascript:void(0);" class="btn-login" style="position:absolute; left:45%; margin-top: 15px;"
+        onclick=reverseList()>
+        Reverse List
+    </a>
+
+</section>
+
+<section id="explore-lessons">
+    <header class="section-header">
+        EXPLORE ALL THE LESSONS
+    </header>
+
+    <ul class="lessons-list">
+        <li>
+            <a href="javascript:void(0);">
+                <img src="../imgs/guitar_img1.jpg">
+                <h3>beginner <br>lessons</h3>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">
+                <img src="../imgs/guitar_img2.jpg">
+                <h3>experienced <br>lessons</h3>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">
+                <img src="../imgs/guitar_img3.jpg">
+                <h3>Song <br>Lessons</h3>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);">
+                <img src="../imgs/guitar_img4.jpg">
+                <h3>Style <br>Lessons</h3>
+            </a>
+        </li>
+    </ul>
+
+    <div class="btn-hide-imgs">
+        <a href="javascript:void(0);" id="btn-hide-imgs" class="btn" onclick="hideImages()">Hide Images</a>
+    </div>
+
+    <div class="btn-footer">
+        <a href="javascript:void(0);" class="btn" onclick="newQuote()">Predict your future!</a>
+    </div>
+
+    <div id="fortune-cookie" class="fortune-cookie-text">
+    </div>
+
+</section>

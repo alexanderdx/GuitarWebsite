@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Guitarism | Free Online Guitar Lessons
+    </title>
+    <link rel="stylesheet" href="../html/home.css" />
+    <meta name="viewport" content="width=device-width">
+    <script src="../home.js"></script>
+</head>
+
+<body>
+    <div style="position: absolute; left:50%">
+        <div class="login-form" id="login" role="dialog">
+            <div class="login-form-container">
+                <span class="close" onclick=closeLoginForm()>&times;</span>
+                <h1>Login</h1>
+                <form>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                    <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                    <a href="">
+                        <span class="forgot-password">Forgot password?</span>
+                    </a>
+                    <button type="submit" class="btn-login" onclick="validate()">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="intro-section">
+
+        <span class=backgroundImg></span>
+
+        <div id="wrapper">
+            <header id="header">
+                <div class="container">
+                    <div>
+                        <a href='/'>
+                            <img src="../imgs/logo1.png" alt="Guitarism.com" width=150px height=auto>
+                        </a>
+                    </div>
+
+                    <a href='#' class="burger-menu" onclick="changeBurgerMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </a>
+
+                    <div class="nav-area">
+                        <div class="nav-holder">
+                            <nav id="nav">
+                                <ul>
+                                    <li><a href="#explore-lessons">LESSONS</a></li>
+                                    <li><a href="#favourite-songs">SONGS</a></li>
+                                    <li><a href="#">RESOURCES</a></li>
+                                    <li><a href="#">REVIEWS</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="btn-login" onclick="openLoginForm()">LOGIN</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="text-header">
+            Start learning <em class="text-yellow">guitar,</em>
+            <br> the <em class="text-yellow">fun</em> way!
+        </div>
+
+        <div class="customer-counter">
+            UP TO <em class="text-yellow" id="counter">0</em> PEOPLE TAUGHT
+            <br>What are <em class="text-yellow">you</em> waiting for?
+        </div>
+
+        <div class="btn-container">
+            <a href="#" class="btn">Try It Free!</a>
+        </div>
+    </section>
+
+
+
+    <section id="favourite-songs">
+        <header class="section-header">
+            LEARN YOUR FAVOURITE SONGS
+        </header>
+
+        <div class="table">
+            <div class="thead">
+                <div class="thead-col"><span class="wrap">info</span></div>
+                <div class="thead-col"><span class="wrap">Title</span></div>
+                <div class="thead-col"><span class="wrap">Artist</span></div>
+                <div class="thead-col"><span class="wrap">Style</span></div>
+            </div>
+
+            <div class="song-list">
+                <div class="body-row">
+                    <div data-label="info" class="col">
+                        <div class="wrap">
+                            1.
+                        </div>
+                    </div>
+                    <div data-label="Title" class="col">
+                        <span class="wrap">
+                            <a href="https://www.youtube.com/watch?v=4jOog0brUuw">Sweet Home Alabama (Made Easy) </a>
+                        </span>
+                    </div>
+                    <div data-label="Artist" class="col text-center">
+                        <span class="wrap"><a href="">Lynyrd Skynyrd</a></span>
+                    </div>
+                    <div data-label="Style" class="col">
+                        <span class="wrap">
+                            <img src="../imgs/acoustic.png" style="max-width: 34px; height: auto;" alt="Acoustic">
+                    </div>
+                </div>
+
+                <div class="body-row">
+                    <div data-label="info" class="col">
+                        <div class="wrap">
+                            2.
+                        </div>
+                    </div>
+                    <div data-label="Title" class="col">
+                        <span class="wrap">
+                            <a href="https://www.youtube.com/watch?v=IzxMeQgtyYE">Wish you were here </a>
+                        </span>
+                    </div>
+                    <div data-label="Artist" class="col text-center">
+                        <span class="wrap"><a href="">pink floyd</a></span>
+                    </div>
+                    <div data-label="Style" class="col">
+                        <span class="wrap">
+                            <img src="../imgs/acoustic.png" style="max-width: 34px; height: auto;" alt="Acoustic">
+                    </div>
+                </div>
+
+                <div class="body-row">
+                    <div data-label="info" class="col">
+                        <div class="wrap">
+                            3.
+                        </div>
+                    </div>
+                    <div data-label="Title" class="col">
+                        <span class="wrap">
+                            <a href="https://www.youtube.com/watch?v=aUGc0-Poun8">Enter Sandman </a>
+                        </span>
+                    </div>
+                    <div data-label="Artist" class="col text-center">
+                        <span class="wrap"><a href="">Metallica</a></span>
+                    </div>
+                    <div data-label="Style" class="col">
+                        <span class="wrap">
+                            <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+                    </div>
+                </div>
+
+                <div class="body-row">
+                    <div data-label="info" class="col">
+                        <div class="wrap">
+                            4.
+                        </div>
+                    </div>
+                    <div data-label="Title" class="col">
+                        <span class="wrap">
+                            <a href="https://www.youtube.com/watch?v=3UV1CtIUOmU">Come as you are </a>
+                        </span>
+                    </div>
+                    <div data-label="Artist" class="col text-center">
+                        <span class="wrap"><a href="">Nirvana</a></span>
+                    </div>
+                    <div data-label="Style" class="col">
+                        <span class="wrap">
+                            <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+                    </div>
+                </div>
+
+                <div class="body-row">
+                    <div data-label="info" class="col">
+                        <div class="wrap">
+                            5.
+                        </div>
+                    </div>
+                    <div data-label="Title" class="col">
+                        <span class="wrap">
+                            <a href="https://www.youtube.com/watch?v=VCyM7tjz2YA">Back in black </a>
+                        </span>
+                    </div>
+                    <div data-label="Artist" class="col text-center">
+                        <span class="wrap"><a href="">AC/DC</a></span>
+                    </div>
+                    <div data-label="Style" class="col">
+                        <span class="wrap">
+                            <img src="../imgs/rock.png" style="max-width: 34px; height: auto;" alt="Rock">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="explore-lessons">
+        <header class="section-header">
+            EXPLORE ALL THE LESSONS
+        </header>
+
+        <ul class="lessons-list">
+            <li>
+                <a href="#">
+                    <img src="../imgs/guitar_img1.jpg">
+                    <h3>beginner <br>lessons</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../imgs/guitar_img2.jpg">
+                    <h3>experienced <br>lessons</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../imgs/guitar_img3.jpg">
+                    <h3>Song <br>Lessons</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../imgs/guitar_img4.jpg">
+                    <h3>Style <br>Lessons</h3>
+                </a>
+            </li>
+        </ul>
+        <div class="btn-footer">
+            <a href="#" class="btn">Try It Free!</a>
+        </div>
+    </section>
+</body>
+
+</html>

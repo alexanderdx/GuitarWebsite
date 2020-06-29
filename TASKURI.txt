@@ -1,0 +1,24 @@
+I - 5.
+Inversare lista. La dubluclick pe o lista existenta in pagina, sa se afiseze elementele ei in ordine inversa.
+
+I - 7.
+Ravase. La intrarea pe pagina, intr-o sectiune speciala se va afisa o prezicere aleatoare (dintr-un vector de siruri). De exemplu: "O sa treci toate examenele!", "O sa ai o vara frumoasa!", "O sa te ciupeasca un tantar!" etc.
+
+I - 8.
+Ascunde/afiseaza imagini. Va exista un buton in pagina, cu textul "ascunde imagini". La click pe el, orice element de tip imagine de oriunde din pagina, dispare. Textul butonul va fi acum "afiseaza imagini". La click pe el se reafiseaza inapoi toate imaginile, iar textul lui redevine "ascunde imagini".
+
+I - 16.
+Salut, utilizator! La intrarea pe pagina se va afisa un prompt cu intrebarea, "Cum te numesti?" Dupa ce utilizatorul raspunde, title-ul tab-ului se va schimba in "Salut, nume!", ramand astfel 2 secunde si apoi revenind la valoarea initiala.
+
+
+II - 2.
+Aparitie treptata cuvant. La intrarea pe pagina, sa existe minim 2 sectiuni cu text, in care textul apare cuvant cu cuvant intr-o "animatie" JavaScript (la fiecare treime de secunda apare cate un cuvant din text).
+
+II - 4.
+Timp petrecut pe pagina. Folosind localStorage sa se afiseze pe fiecare pagina (de exemplu in footer) numarul de minute si secunde petrecute in total (pe parcursul tuturor vizitarilor) de un utilizator pe pagina curenta (se va afisa pe fiecare pagina a site-ului). Afisajul se va actualiza la fiecare secunda.. Realizati taskul folosind aceeasi functie pentru toate paginile.
+
+III - 8.
+Afisarea ip-ului si timpului de la ultima logare pentru utilizatorul logat, cat si numarul de vizitari (de exemplu:"Salut, Gheorghe, ultima oara ai intrat de pe ip-ul 109.123.88.44 in ziua 23.04.2020 la ora 17:55:22. Ai vizitat site-ul de 215 ori"). In cazul in care utilizatorul se logheaza pentru prima oara, primeste mesajul "Salut, te-ai logat azi pentru prima oara".
+
+II - 10.
+Setare si salvare dimensiune text. Va exista un select cu dimensiuni de text (mic, mediu, mare). La alegerea unei dimensiuni, textul paginii (poate fi doar si pentru o zona din pagina) se redimensioneaza conform alegerii (de exemplu, mic ar putea insemna 10px, mediu 14 px, mare 18px). Cu ajutorul localStorage-ului se va memora alegerea facuta, si la reintrarea pe pagina, textul se va afisa conform ultimei selectii facute, si va aparea si in select optiunea facuta anterior. Va exista si un buton care reseteaza selectia, localStorage-ul (sterge dimensiunea de text, memorata) si dimensiunea textului.

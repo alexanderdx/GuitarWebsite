@@ -1,0 +1,67 @@
+<script>
+    function logout() {
+        fetch('http://localhost:3000/logout', {
+            method: 'POST'
+        });
+        window.location.replace('/');
+    }
+</script>
+
+
+<section class="intro-section">
+
+    <span id="header-bg" class=backgroundImg></span>
+
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div>
+                    <a href='/'>
+                        <img src="../imgs/logo1.png" alt="Guitarism.com" width=150px height=auto>
+                    </a>
+                </div>
+
+                <a href="javascript:void(0);" class="burger-menu" onclick="changeBurgerMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+
+                <div class="nav-area">
+                    <div class="nav-holder">
+                        <nav id="nav">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">TEXT SIZE</a>
+                                    <ul>
+                                        <a href="javascript:void(0);" id="text-small"
+                                            onclick="changeTextSize(this)">SMALL</a>
+                                        <a href="javascript:void(0);" id="text-medium"
+                                            onclick="changeTextSize(this)">MEDIUM</a>
+                                        <a href="javascript:void(0);" id="text-large"
+                                            onclick="changeTextSize(this)">LARGE</a>
+                                        <a href="javascript:void(0);" id="text-large"
+                                            onclick="changeTextSize(this)">RESET</a>
+                                    </ul>
+                                </li>
+                                <li><a href="#explore-lessons">LESSONS</a></li>
+                                <li><a href="#favourite-songs">SONGS</a></li>
+                                <li><a href="javascript:void(0);">RESOURCES</a></li>
+                                <li><a href="javascript:void(0);">REVIEWS</a></li>
+                            </ul>
+                        </nav>
+
+                        <% if (locals.user) { %>
+                        <a href="javascript:void(0);" class="btn-login" onclick="logout()">
+                            <%= user %>
+                        </a>
+                        <% } else { %>
+                        <a href="javascript:void(0);" class="btn-login" onclick="openLoginForm()">
+                            LOGIN
+                        </a>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
