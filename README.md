@@ -1,2 +1,4 @@
 # Guitar_Website
-### Proiect TW - Dumea Alexandru-Gabriel - Grupa 144
+## Proiect TW
+
+### Dumea Alexandru-Gabriel - Grupa 144
